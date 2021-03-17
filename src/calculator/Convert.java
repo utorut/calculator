@@ -34,10 +34,10 @@ public class Convert {
                 throw new NumberFormatException();
             }
             if(romaNum.contains("IX") || romaNum.contains("IV")) {
-                number -= last+1;
+
+                number -= last + 1;
                 integerValue += number;
                 last = number;
-
             } else {
 
                 integerValue += number;
